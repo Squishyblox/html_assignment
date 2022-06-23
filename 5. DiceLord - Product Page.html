@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICELORDS</title>
+    <link rel="stylesheet" href="DiceLordTest.css">
+    <link rel="stylesheet" href="BodyContainer.css">
+    <link rel="stylesheet" href="DiceLord - Interactive Navbar.css" media="screen">
+    <link rel="stylesheet" href="DiceLord Product Page.css">
+</head>
+<body>
+    <div>
+        <div class="spacer" id="spacer" style="z-index: 1;"></div>
+        <nav class="pot" id="pot">
+            <!--Logo (Replace when have time)-->
+            <a href="1. DiceLord - Home Page.html" style="text-decoration: none;"><img src="image/dicelordlogo.png" style="height:85%; margin: 5px 0px 2px 12px;"></a>
+
+            <!--Nav Bar Options-->
+            <span class="holder"> 
+                <a href="4. DiceLord - About Page.html">About</a>
+                <a href="5. DiceLord - Product Page.html">Products</a>
+                <a href="3. DiceLord - Contact Us Page.html">Contact Us</a>
+                <a href="2. DiceLord - Blog Page.html">Blog</a>
+            </span>
+            <!--Menu Icon when Zoomed-->
+            <a href="javascript:void(0);" class="menu" onclick="sideNav()">
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+            </a>
+            
+        </nav>
+
+        <!--Invisible Side Panel-->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <br><br>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <main>
+            <!--Page Content-->
+            <div id="productContainer" align="center">
+                <span class="productItem">
+                    <figure>
+                        <a href="image/noot noot.jpg"><img src="image/noot noot.jpg"></a>
+                        <figcaption>Product 1</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="image/noot noot.jpg"><img src="image/noot noot.jpg"></a>
+                        <figcaption>Product 2</figcaption>
+                    </figure>
+                    <figure>
+                    <a href="image/noot noot.jpg"><img src="image/noot noot.jpg"></a>
+                        <figcaption>Product 3</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="image/noot noot.jpg"><img src="image/noot noot.jpg"></a>
+                        <figcaption>Product 4</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="image/noot noot.jpg"><img src="image/noot noot.jpg"></a>
+                        <figcaption>Product 5</figcaption>
+                    </figure>
+                    <figure>
+                    <a href="image/noot noot.jpg"><img src="image/noot noot.jpg"></a>
+                        <figcaption>Product 6</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="image/noot noot.jpg"><img src="image/noot noot.jpg"></a>
+                        <figcaption>Product 7</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="image/noot noot.jpg"><img src="image/noot noot.jpg"></a>
+                        <figcaption>Product 8</figcaption>
+                    </figure>
+                    <figure>
+                    <a href="image/noot noot.jpg"><img src="image/noot noot.jpg"></a>
+                        <figcaption>Product 9</figcaption>
+                    </figure>
+                </span>
+            </div>
+        </main>
+    </div>
+</body>
+
+<script>
+    //scrolling navbar stuff
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("pot").style.top = "60px";
+        } else {
+            document.getElementById("pot").style.top = "-20px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
+    window.onresize = function() {
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+
+    function sideNav(){
+        document.getElementById("mySidepanel").style.width = "250px";
+    }
+
+    function closeNav(){
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+</script>
+</html>

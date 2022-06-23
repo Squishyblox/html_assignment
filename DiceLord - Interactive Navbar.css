@@ -1,0 +1,24 @@
+.icon{width: 42px; height: 7px;
+    background-color: black;
+    margin: 12px;}
+
+.menu{display:none; margin: 6px 6px}
+
+@media screen and (max-width:900px){
+    .holder{display:none;}
+    .menu{display:block; float:right;}
+}
+
+.menu:hover{background-color: #9bb9ff;}
+
+.sidepanel{
+    height:min-content; width: 0; height:100%;
+    background-color: #9bb9ff; z-index: 1;overflow-y: auto;
+    top:0; right:0; position:fixed; 
+    display: block; transition: 0.3s;
+}
+
+.sidepanel a{padding: 8px 20px; display:block;
+    font-size: 22px; text-decoration: none; color: #f0ffff;}
+
+.sidepanel .closebtn{float: right; display:block;}

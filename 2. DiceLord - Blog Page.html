@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICELORDS</title>
+    <link rel="stylesheet" href="DiceLordTest.css">
+    <link rel="stylesheet" href="BodyContainer.css">
+    <link rel="stylesheet" href="DiceLord - Interactive Navbar.css" media="screen">
+</head>
+<body>
+    <div>
+        <div class="spacer" id="spacer" style="z-index: 1;"></div>
+        <nav class="pot" id="pot">
+            <!--Logo (Replace when have time)-->
+            <a href="DiceLord - Home Page.html" style="text-decoration: none;"><img src="image/dicelordlogo.png" style="height:100%;"></a>
+
+            <!--Nav Bar Options-->
+            <span class="holder"> 
+                <a href="DiceLord - Test Page.html">About</a>
+                <a href="DiceLord - Products Page.html">Products</a>
+                <a href="DiceLord - Products Page.html">Contact Us</a>
+                <a href="DiceLord - Products Page.html">Blog</a>
+
+            <!--Menu Icon when Zoomed-->
+            </span>
+            <a href="javascript:void(0);" class="menu" onclick="sideNav()">
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+            </a>
+        </nav>
+
+        <!--Invisible Side Panel-->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <br><br>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!--Body Content-->
+        <div class="container">
+            
+        </div>
+    </div>
+</body>
+
+<script>
+    //scrolling navbar stuff
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("pot").style.top = "40px";
+        } else {
+            document.getElementById("pot").style.top = "-20px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
+    window.onresize = function() {
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+
+    function sideNav(){
+        document.getElementById("mySidepanel").style.width = "250px";
+    }
+
+    function closeNav(){
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+</script>
+</html>
