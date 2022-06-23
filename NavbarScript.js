@@ -4,7 +4,7 @@
     window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-            document.getElementById("pot").style.top = "80px";
+            document.getElementById("pot").style.top = "60px";
         } else {
             document.getElementById("pot").style.top = "-20px";
         }
