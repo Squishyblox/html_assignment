@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="DiceLord - Interactive Navbar.css" media="screen">
     <link rel="stylesheet" href="DiceLord Product Page.css">
 </head>
-<body>
+<body onload="myFunction()">
     <div>
         <div class="spacer" id="spacer" style="z-index: 1;"></div>
         <nav class="pot" id="pot">
@@ -46,7 +46,8 @@
         <main>
             <!--Page Content-->
             <div id="productContainer" align="center">
-                <span class="productItem">
+                <button onclick="myFunction()">Try it</button><br><br>
+                <span class="productItem" id="thonk">
                     <figure>
                         <a href="Image/noot noot.jpg"><img src="Image/noot noot.jpg"></a>
                         <figcaption>Product 1</figcaption>
@@ -90,4 +91,30 @@
 </body>
 
 <script src="NavbarScript.js"></script>
+<!--Load in Image Script-->
+<script>
+    var g = 1;
+    var w = "Image/noot noot.jpg";
+    var names = "The Pulpit Rock";
+
+    function myFunction() {
+    var x = document.createElement("FIGURE");
+    document.getElementById("thonk").appendChild(x);
+
+    var y = document.createElement("IMG");
+    y.setAttribute("src", w);
+    y.setAttribute("width", "304");
+    y.setAttribute("width", "228");
+    y.setAttribute("alt", names);
+
+    x.appendChild(y);
+    
+    var z = document.createElement("figcaption");
+    var text = document.createTextNode("Image No. " + g + "\n" + "Image Name: " + names);
+    z.appendChild(text);
+    x.appendChild(z);
+    
+    g += 1;
+}
+</script>
 </html>

@@ -1,0 +1,6 @@
+figure{background-color: yellowgreen; width: 200px; height: 200px; margin: 1%;   }
+
+figure img{width: 180px; padding: 10px;}
+
+figure figcaption{display:block; padding: 10px;}
+
