@@ -15,12 +15,7 @@
     <br><br>
     <div align="center" style="margin 180px;">
         <div>
-            <span id="text" style="display:flex; flex-direction: row; flex-wrap:wrap;
-            position: absolute; left: 10%; right:10%; justify-content: center;">
-                <figure>
-                    <img src="Image/noot noot.jpg">
-                    <figcaption>Duh</figcaption>
-                </figure>
+            <span id="text">
             </span>
         </div>
     </div>
@@ -41,11 +36,23 @@
         {createObject(block[i].img, block[i].type, block[i].id);}
 
         function createObject(img, type, id){
+            //<Figure>
             var box = document.createElement("FIGURE");
             document.getElementById("text").appendChild(box);
+
+            //<Promo Header>
+            var promotag = document.createElement("div");
+            promotag.setAttribute("style", "background-color: yellowgreen; width: 165px; height: 20px; margin: -1px 0 0 -28px; border-radius: 0 0 50px 0;")
+            box.appendChild(promotag);
+            var promotext = document.createTextNode("PROMO");
+            promotag.appendChild(promotext);
+
+            //<Image Loader>
             var image = document.createElement("img");
             image.setAttribute("src", img);
             box.appendChild(image);
+
+            //<Product Info>
             var caption = document.createElement("figcaption");
             var text = document.createTextNode(type + "\n");
             caption.appendChild(text);
