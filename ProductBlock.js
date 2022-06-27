@@ -1,17 +1,25 @@
 const block = [
-    {img: "Image/noot noot.jpg", type: "Dice Set 1", id:"A01", promotype: "Promo"}, 
-    {img: "Image/noot noot.jpg", type: "Dice Set 2", id:"A02", promotype: "LowPrice"},
-    {img: "Image/noot noot.jpg", type: "Dice Set 3", id:"A03", promotype: "DropPrice"},
-    {img: "Image/noot noot.jpg", type: "Dice Set 4", id:"A04", promotype: "TwoFOne"},
-    {img: "Image/noot noot.jpg", type: "Dice Set 5", id:"B01", promotype: "None"},
-    {img: "Image/noot noot.jpg", type: "Dice Set 6", id:"B02", promotype: "Promo"},
-    {img: "Image/noot noot.jpg", type: "Dice Set 7", id:"B03", promotype: "Promo"},
-    {img: "Image/noot noot.jpg", type: "Dice Set 8", id:"B04", promotype: "Promo"},]
+    {img: "Image/noot noot.jpg", name: "Dice Set 1", promotype: "Promo", price: "300.00"
+            ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"}, 
+    {img: "Image/noot noot.jpg", name: "Dice Set 2", promotype: "LowPrice", price: "450.00"
+            ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
+    {img: "Image/noot noot.jpg", name: "Dice Set 3", promotype: "DropPrice", price: "500.00"
+            ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
+    {img: "Image/noot noot.jpg", name: "Dice Set 4", promotype: "TwoFOne", price: "370.00"
+            ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
+    {img: "Image/noot noot.jpg", name: "Dice Set 5", promotype: "None", price: "310.00"
+            ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
+    {img: "Image/noot noot.jpg", name: "Dice Set 6", promotype: "Promo", price: "320.00"
+            ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
+    {img: "Image/noot noot.jpg", name: "Dice Set 7", promotype: "Promo", price: "350.00"
+            ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
+    {img: "Image/noot noot.jpg", name: "Dice Set 8", promotype: "Promo", price: "800.00"
+            ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},]
 
     for(let i = 0; i < block.length; i++)
-    {createObject(block[i].img, block[i].type, block[i].id, block[i].promotype);}
+    {createObject(block[i].img, block[i].name, block[i].promotype, block[i].price, block[i].description, block[i].linked);}
 
-    function createObject(img, Pname, id, promotype){
+    function createObject(img, Pname, promotype, price, descriptor, linked){
         //<Figure>
         var box = document.createElement("figure");
         box.setAttribute("id", promotype);
@@ -50,8 +58,36 @@ const block = [
         image.setAttribute("src", img);
         box.appendChild(image);
 
-        //<Product Info>
+        //<Product Title>
         var caption = document.createElement("figcaption");
-        var text = document.createTextNode("Product: " + Pname + "\n" + "ID No: " + id);
-        caption.appendChild(text);
-        box.appendChild(caption);}
+        caption.setAttribute("id", "nameProduct");
+        var title = document.createElement("p");
+        title.setAttribute("style", "font-size: 18px; margin: 0 0 -15px 0; font-weight: bold; text-decoration: underline; height: 40px; overflow:hidden;")
+        var text = document.createTextNode(Pname);
+        title.appendChild(text);
+
+        //<Product Description>
+        var descholder = document.createElement("p");
+        var desc = document.createTextNode(descriptor);
+        descholder.setAttribute("style", "font-size: 15px; margin: -20px 0 -15px 0; height: 75px; overflow: auto;")
+        descholder.appendChild(desc)
+        
+        //<Product Price>
+        var priceholder = document.createElement("p");
+        priceholder.setAttribute("style", "font-size: 18px; margin: 0 0 -15px 0;")
+        var pricing = document.createTextNode("\n" + "USD " + price);
+        priceholder.appendChild(pricing);
+
+        caption.appendChild(title);
+        caption.appendChild(descholder);
+        caption.appendChild(priceholder);
+        box.appendChild(caption);
+
+        //<Button>
+        var button = document.createElement("a");
+        button.setAttribute("href", linked);
+        button.setAttribute("id", "button");
+        button.setAttribute("target", "_blank");
+        var ltext = document.createTextNode("BUY NOW!");
+        button.appendChild(ltext);
+        box.appendChild(button);}
