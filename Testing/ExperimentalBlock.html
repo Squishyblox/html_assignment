@@ -18,17 +18,17 @@
 </body>
     <script>
         const block = [
-        {img: "Image/noot noot.jpg", type: "Dice Set 1", id:"A01", promotype: "Promo"}, 
-        {img: "Image/noot noot.jpg", type: "Dice Set 2", id:"A02", promotype: "LowPrice"},
-        {img: "Image/noot noot.jpg", type: "Dice Set 3", id:"A03", promotype: "DropPrice"},
-        {img: "Image/noot noot.jpg", type: "Dice Set 4", id:"A04", promotype: "TwoFOne"},
-        {img: "Image/noot noot.jpg", type: "Dice Set 5", id:"B01", promotype: "None"},
-        {img: "Image/noot noot.jpg", type: "Dice Set 6", id:"B02", promotype: "Promo"},
-        {img: "Image/noot noot.jpg", type: "Dice Set 7", id:"B03", promotype: "Promo"},
-        {img: "Image/noot noot.jpg", type: "Dice Set 8", id:"B04", promotype: "Promo"},]
+        {img: "Image/noot noot.jpg", name: "Dice Set 1", id:"A01", promotype: "Promo"}, 
+        {img: "Image/noot noot.jpg", name: "Dice Set 2", id:"A02", promotype: "LowPrice"},
+        {img: "Image/noot noot.jpg", name: "Dice Set 3", id:"A03", promotype: "DropPrice"},
+        {img: "Image/noot noot.jpg", name: "Dice Set 4", id:"A04", promotype: "TwoFOne"},
+        {img: "Image/noot noot.jpg", name: "Dice Set 5", id:"B01", promotype: "None"},
+        {img: "Image/noot noot.jpg", name: "Dice Set 6", id:"B02", promotype: "Promo"},
+        {img: "Image/noot noot.jpg", name: "Dice Set 7", id:"B03", promotype: "Promo"},
+        {img: "Image/noot noot.jpg", name: "Dice Set 8", id:"B04", promotype: "Promo"},]
 
         for(let i = 0; i < block.length; i++)
-        {createObject(block[i].img, block[i].type, block[i].id, block[i].promotype);}
+        {createObject(block[i].img, block[i].name, block[i].id, block[i].promotype);}
 
         function createObject(img, Pname, id, promotype){
             //<Figure>
@@ -69,11 +69,27 @@
             image.setAttribute("src", img);
             box.appendChild(image);
 
-            //<Product Info>
+            //<Product Title>
             var caption = document.createElement("figcaption");
-            var text = document.createTextNode("Product: " + Pname + "\n" + "ID No: " + id);
-            caption.appendChild(text);
+            caption.setAttribute("id", "nameProduct");
+            var title = document.createElement("p");
+            title.setAttribute("style", "font-size: 18px; margin: 0 0 -15px 0; font-weight: bold; text-decoration: underline;")
+            var text = document.createTextNode(Pname);
+            title.appendChild(text);
+
+            //<Product Description>
+            var desc = document.createTextNode("\nDescription:\nblah blah blah 3 set of dice blah blah\n" + "PRICE HERE");
+            caption.appendChild(title);
+            caption.appendChild(desc);
             box.appendChild(caption);
+
+            //<Button>
+            var button = document.createElement("a");
+            button.setAttribute("href", "https://www.youtube.com/");
+            button.setAttribute("id", "button");
+            var ltext = document.createTextNode("BUY NOW!");
+            button.appendChild(ltext);
+            box.appendChild(button);
         }
     </script>
 </html>
