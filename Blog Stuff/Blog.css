@@ -1,0 +1,91 @@
+.blogclass {
+    font-family: "Helvetica";
+    margin-right: 30px;
+    margin-top: 180px; 
+    display: block;
+    padding-right: 20px;
+    padding-left: 190px;
+}
+
+/* Blog Title*/
+.blogclass h1 {
+    font-weight: bolder;
+    font-size: 60px;
+    width: 500px;
+    color: rgb(0, 56, 167);
+}
+
+
+/* Title of Post */
+.blogclass h2 {
+    font-size: 30px;
+    width: 500px;
+}
+#h2link {
+    text-decoration: none;
+}
+#h2link:link {
+    color: rgb(0, 85, 255);
+}
+#h2link:hover {
+    color: greenyellow;
+    transition: 0.5s;
+}
+
+
+/* Featured Post Title*/
+.blogclass h4 {
+    width: 500px;
+    color: rgb(83, 83, 83);
+}
+
+
+/* Author Name*/
+.authorname {
+    padding-left: 1em;
+    padding-bottom: -2em;
+}
+
+
+/* Author Date*/
+.authordate {
+    padding-left: 1em;
+    padding-bottom: 2em;
+}
+
+
+/* Link to full article*/
+.fullarticle {
+    
+    font-weight: bold;
+}
+.fullarticle:link {
+    color: rgb(0, 85, 255);
+}
+.fullarticle:hover {
+    color: greenyellow;
+    transition: 0.5s;
+}
+
+
+/* Image Icon of author*/
+.placeholderimg {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgb(0, 85, 255);
+    margin-top: .5em;
+    border-radius: 60px;
+}
+#imagecontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Right side image*/
+.img2 {
+    width: 600px;
+    height: 400px;
+    float: right;
+    margin-right: 100px;
+    z-index: -1;
+}
