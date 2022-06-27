@@ -7,12 +7,22 @@
     <title>DICELORDS</title>
     <link rel="stylesheet" href="DiceLordTest.css">
     <link rel="stylesheet" href="BodyContainer.css">
+    <link rel="stylesheet" href="About.css">
     <link rel="stylesheet" href="DiceLord - Interactive Navbar.css" media="screen">
+
+    <style>
+        h1 {
+            font-size: 65px;
+        }
+
+
+    </style>
 </head>
-<body>
+<body style = "background-color: black;">
+
     <div>
-        <div class="spacer" id="spacer" style="z-index: 1;"></div>
-        <nav class="pot" id="pot">
+        <div class="spacer" id="spacer" style="z-index: 2;"></div>
+        <nav class="pot" id="pot" style="z-index: 1">
             <!--Logo (Replace when have time)-->
             <a href="index.html" style="text-decoration: none;"><img src="Image/dicelordlogo.png" style="height:85%; margin: 5px 0px 2px 12px;"></a>
 
@@ -43,11 +53,54 @@
         </div>
 
         <!--Body Content-->
-        <div class="container">
+
+
+                 <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <img src="Image/dicesjpg.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="Image/dice2.webp" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="Image/board.webp" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Image/board2.jpg" style="width:100%">
+            </div>
+
+        </div>
+
+        <div class="aboutClass">
+            <div style = "float: left;margin-top: 230px; padding-left: 160px;">
+            
+            <h1 style = "color:white">
+                Hello there, we're nerds.
+            </h1>
+            
+            <p style = "color:white">
+                We know what it takes to bring the best experience out of your tabletop game sessions
+            </p>
+            
+            
+            
+            
+            
+            </div>
+
+
+
             
         </div>
     </div>
 </body>
 
 <script src="NavbarScript.js"></script>
+<script src="About.js"></script>
 </html>
