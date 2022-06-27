@@ -1,0 +1,34 @@
+div#productContainer{margin: 140px 3% 0 3%;}
+
+figure{background-color: white;}
+
+body{background-color: lightgray;}
+
+figure img{width: 240px; padding: 5px; background-color: none; margin: right -2px;}
+
+figure figcaption{display:block; padding: 10px; border: 2px solid black; text-align: left; white-space: pre-wrap;}
+
+span#text{display:flex; flex-direction: row; flex-wrap:wrap; position: absolute; left: 10%; right:10%; justify-content: center;}
+
+/*Tags for Products Figure Box*/
+figure#Promo{width: 250px; height: 350px; margin: 1%; border: 3px solid yellowgreen;}
+
+figure#LowPrice{width: 250px; height: 350px; margin: 1%; border: 3px solid darkred;}
+
+figure#DropPrice{width: 250px; height: 350px; margin: 1%; border: 3px solid red;}
+
+figure#TwoFOne{width: 250px; height: 350px; margin: 1%; border: 3px solid darkolivegreen;}
+
+figure#None{width: 250px; height: 350px; margin: 1%; border: 3px solid rgba(0, 0, 0, 0)(0, 0, 0, 0.032);}
+
+/*Tags for Products Title*/
+
+div#Promo{background-color: yellowgreen; width: 230px; height: 35px; margin: -1px 0 0 -25px; border-radius: 0 0 50px 0; font-size:30px; color: white;}
+
+div#LowPrice{background-color: darkred; width: 230px; height: 35px; margin: -1px 0 0 -25px; border-radius: 0 0 50px 0; font-size:30px; color: white;}
+
+div#DropPrice{background-color: red; width: 230px; height: 35px; margin: -1px 0 0 -25px; border-radius: 0 0 50px 0; font-size:30px; color: white;}
+
+div#TwoFOne{background-color: darkolivegreen; width: 230px; height: 35px; margin: -1px 0 0 -25px; border-radius: 0 0 50px 0; font-size:30px; color: white;}
+
+div#None{background-color: rgba(0, 0, 0, 0)(0, 0, 0, 0.032); width: 230px; height: 35px; margin: -1px 0 0 -25px; border-radius: 0 0 50px 0; font-size:30px; color: white;}

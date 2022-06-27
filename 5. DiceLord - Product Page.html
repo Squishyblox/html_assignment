@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="DiceLordTest.css">
     <link rel="stylesheet" href="BodyContainer.css">
     <link rel="stylesheet" href="DiceLord - Interactive Navbar.css" media="screen">
-    <link rel="stylesheet" href="DiceLord Product Page.css">
+    <link rel="stylesheet" href="DiceLord - Product Block.css">
 </head>
 <body onload="myFunction()">
     <div>
-        <div class="spacer" id="spacer" style="z-index: 1;"></div>
-        <nav class="pot" id="pot">
+        <div class="spacer" id="spacer" style="z-index: 2;"></div>
+        <nav class="pot" id="pot" style="z-index: 1;">
             <!--Logo (Replace when have time)-->
             <a href="index.html" style="text-decoration: none;"><img src="Image/dicelordlogo.png" style="height:85%; margin: 5px 0px 2px 12px;"></a>
 
@@ -43,48 +43,12 @@
             <a href="#">Contact</a>
         </div>
 
-        <main>
-            <!--Page Content-->
-            <div id="productContainer" align="center">
-                <button onclick="myFunction()">Try it</button><br><br>
-                <span class="productItem" id="thonk">
-                    <figure>
-                        <a href="Image/noot noot.jpg"><img src="Image/noot noot.jpg"></a>
-                        <figcaption>Product 1</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="Image/noot noot.jpg"><img src="Image/noot noot.jpg"></a>
-                        <figcaption>Product 2</figcaption>
-                    </figure>
-                    <figure>
-                    <a href="Image/noot noot.jpg"><img src="Image/noot noot.jpg"></a>
-                        <figcaption>Product 3</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="Image/noot noot.jpg"><img src="Image/noot noot.jpg"></a>
-                        <figcaption>Product 4</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="Image/noot noot.jpg"><img src="Image/noot noot.jpg"></a>
-                        <figcaption>Product 5</figcaption>
-                    </figure>
-                    <figure>
-                    <a href="Image/noot noot.jpg"><img src="Image/noot noot.jpg"></a>
-                        <figcaption>Product 6</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="Image/noot noot.jpg"><img src="Image/noot noot.jpg"></a>
-                        <figcaption>Product 7</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="Image/noot noot.jpg"><img src="Image/noot noot.jpg"></a>
-                        <figcaption>Product 8</figcaption>
-                    </figure>
-                    <figure>
-                    <a href="Image/noot noot.jpg"><img src="Image/noot noot.jpg"></a>
-                        <figcaption>Product 9</figcaption>
-                    </figure>
-                </span>
+        <main style="z-index: -1;">
+            <div align="center" id="productContainer">
+                <div>
+                    <span id="text">
+                    </span>
+                </div>
             </div>
         </main>
     </div>
@@ -92,29 +56,5 @@
 
 <script src="NavbarScript.js"></script>
 <!--Load in Image Script-->
-<script>
-    var g = 1;
-    var w = "Image/noot noot.jpg";
-    var names = "The Pulpit Rock";
-
-    function myFunction() {
-    var x = document.createElement("FIGURE");
-    document.getElementById("thonk").appendChild(x);
-
-    var y = document.createElement("IMG");
-    y.setAttribute("src", w);
-    y.setAttribute("width", "304");
-    y.setAttribute("width", "228");
-    y.setAttribute("alt", names);
-
-    x.appendChild(y);
-    
-    var z = document.createElement("figcaption");
-    var text = document.createTextNode("Image No. " + g + "\n" + "Image Name: " + names);
-    z.appendChild(text);
-    x.appendChild(z);
-    
-    g += 1;
-}
-</script>
+<script src="ProductBlock.js"></script>
 </html>
