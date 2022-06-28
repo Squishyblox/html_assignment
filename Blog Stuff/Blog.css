@@ -88,4 +88,45 @@
     float: right;
     margin-right: 100px;
     z-index: -1;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px rgb(200, 200, 200);
+}
+
+
+/*Blog Post 1*/
+.blogbox {
+    width: 300px;
+    height: 350px;
+    position: absolute; bottom: -500px; left: 200px;
+    border-radius: 20px;
+    background-color: rgb(240, 255, 255);
+    box-shadow: 5px 5px 5px 5px rgb(200, 200, 200);
+    padding: 5px;
+}
+
+.blogbox h2 {
+    padding-left: 10px;
+    padding-right: 4px;
+    font-family: "Helvetica";
+}
+
+.img3 {
+    border-radius: 20px 20px 0 0;
+    width: 300px;
+    height: 170px;
+}
+
+
+/*Pseudo classes for blog*/
+.blogarticle {
+    font-family: "Helvetica";
+    font-weight: bold;
+    padding-left: 10px;
+}
+.blogarticle:link {
+    color: rgb(0, 85, 255);
+}
+.blogarticle:hover {
+    color: greenyellow;
+    transition: 0.5s;
 }
