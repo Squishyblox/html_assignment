@@ -22,13 +22,13 @@ const block = [
     function createObject(img, Pname, promotype, price, descriptor, linked){
         //<Figure>
         var box = document.createElement("figure");
-        box.setAttribute("id", promotype);
+        box.setAttribute("class", promotype);
         document.getElementById("text").appendChild(box);
 
         //<Promo Header>
         var promotag = document.createElement("div");
         //promotag.setAttribute("style", "background-color: yellowgreen; width: 230px; height: 35px; margin: -1px 0 0 -25px; border-radius: 0 0 50px 0; font-size:30px; color: white;")
-        promotag.setAttribute("id", promotype);
+        promotag.setAttribute("id", promotype); //set to class
         box.appendChild(promotag);
 
         //setup a switch case here
@@ -60,7 +60,7 @@ const block = [
 
         //<Product Title>
         var caption = document.createElement("figcaption");
-        caption.setAttribute("id", "nameProduct");
+        caption.setAttribute("id", "nameProduct"); 
         var title = document.createElement("p");
         title.setAttribute("style", "font-size: 18px; margin: 0 0 -15px 0; font-weight: bold; text-decoration: underline; height: 40px; overflow:hidden;")
         var text = document.createTextNode(Pname);
