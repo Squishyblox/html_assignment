@@ -13,7 +13,7 @@
 
 .sidepanel{
     height:min-content; width: 0; height:100%;
-    background-color: #9bb9ff; z-index: 1;overflow-y: auto;
+    background-color: #9bb9ff; z-index: 3;overflow-y: auto;
     top:0; right:0; position:fixed; 
     display: block; transition: 0.3s;
 }

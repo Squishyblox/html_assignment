@@ -44,6 +44,20 @@
         </div>
 
         <main style="z-index: -1;">
+            <div>
+                <a href="javascript:void(0)" onclick="filterOpen()" style="text-decoration:none;"><div id="filtertext">
+                    FILTER
+                </div></a>
+                <div id="filterpanel" class="filterbox">
+                    <div id="filtertitle">Show: </div>
+                    <a onclick="promoFilter()">Promo Only</a>
+                    <a onclick="lowPriceFilter()">Low Price Only</a>
+                    <a onclick="dropPriceFilter()">Price Drop Only</a>
+                    <a onclick="twoForOneFilter()">2 For 1 Only</a>
+                    <a onclick="noneFilter()">No Promo</a>
+                    <a onclick="allFilter()">Show All</a>
+                </div>
+            </div>
             <div align="center" id="productContainer">
                 <div>
                     <span id="text">
@@ -57,4 +71,5 @@
 <script src="NavbarScript.js"></script>
 <!--Load in Image Script-->
 <script src="ProductBlock.js"></script>
+<script src="FilterProduct.js"></script>
 </html>
