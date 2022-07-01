@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    background-color: #769fff;
+    padding-bottom: 4rem;
+    font-family: "Helvetica";
+}
+
+.footer {
+    width: 80%;
+    height: 40vh;
+    background-color: #769fff;
+    color: #FFF;
+    display: flex;
+    justify-content: centers;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
