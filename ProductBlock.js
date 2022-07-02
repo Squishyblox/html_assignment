@@ -1,17 +1,17 @@
 const block = [
-    {img: "Image/noot noot.jpg", name: "Dice Set 1", promotype: "Promo", price: "300.00"
+    {img: "Image/Stock Imege/Dark Blue Dice Set.jpg", name: "Dice Set 1", promotype: "Promo", price: "300.00"
             ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"}, 
-    {img: "Image/noot noot.jpg", name: "Dice Set 2", promotype: "LowPrice", price: "450.00"
+    {img: "Image/Stock Imege/Green Dice.jpg", name: "Dice Set 2", promotype: "LowPrice", price: "450.00"
             ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
-    {img: "Image/noot noot.jpg", name: "Dice Set 3", promotype: "DropPrice", price: "500.00"
+    {img: "Image/Stock Imege/Gold Border Dice.jpg", name: "Dice Set 3", promotype: "DropPrice", price: "500.00"
             ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
-    {img: "Image/noot noot.jpg", name: "Dice Set 4", promotype: "TwoFOne", price: "370.00"
+    {img: "Image/Stock Imege/Earth Dice 2 For 1.jpg", name: "Dice Set 4", promotype: "TwoFOne", price: "370.00"
             ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
-    {img: "Image/noot noot.jpg", name: "Dice Set 5", promotype: "None", price: "310.00"
+    {img: "Image/Stock Imege/Pink Dice Set.jpg", name: "Dice Set 5", promotype: "None", price: "310.00"
             ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
-    {img: "Image/noot noot.jpg", name: "Dice Set 6", promotype: "Promo", price: "320.00"
+    {img: "Image/Stock Imege/Sea Blue Dice Set.jpg", name: "Dice Set 6", promotype: "Promo", price: "320.00"
             ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
-    {img: "Image/noot noot.jpg", name: "Dice Set 7", promotype: "Promo", price: "350.00"
+    {img: "Image/Stock Imege/Red Dice.jpg", name: "Dice Set 7", promotype: "Promo", price: "350.00"
             ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},
     {img: "Image/noot noot.jpg", name: "Dice Set 8", promotype: "Promo", price: "800.00"
             ,description: "Description:\nTesting Description\nTesting Description\nTesting Description", linked: "https://www.youtube.com/"},]
@@ -53,16 +53,21 @@ const block = [
         }
         promotag.appendChild(promotext);
 
+        //<Create Image Box>
+        var imagebox = document.createElement("div");
+        imagebox.setAttribute("id", "blackbox");
+
         //<Image Loader>
         var image = document.createElement("img");
         image.setAttribute("src", img);
-        box.appendChild(image);
+        imagebox.appendChild(image);
+        box.appendChild(imagebox);
 
         //<Product Title>
         var caption = document.createElement("figcaption");
         caption.setAttribute("id", "nameProduct"); 
         var title = document.createElement("p");
-        title.setAttribute("style", "font-size: 18px; margin: 0 0 -15px 0; font-weight: bold; text-decoration: underline; height: 40px; overflow:hidden;")
+        title.setAttribute("style", "font-size: 18px; margin: 5px 0 -15px 0; font-weight: bold; text-decoration: underline; height: 40px; overflow:hidden;")
         var text = document.createTextNode(Pname);
         title.appendChild(text);
 
