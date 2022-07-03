@@ -1,0 +1,32 @@
+.featuredblog {
+    margin-left: 10em;
+    font-family: "Helvetica";
+}
+
+.featuredblog h1 {
+    margin-top: 200px;
+    font-size: 60px;
+    color: rgb(0, 56, 167);
+}
+
+.ftd-img {
+    width: 800px;
+    height: 500px;
+}
+
+.featuredblog p {
+    font-size: 18px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.featuredblog li {
+    font-size: 18px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.featuredblog h2 {
+    font-size: 28px;
+    color: rgb(0, 85, 255);
+}

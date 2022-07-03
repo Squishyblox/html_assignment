@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #769fff;
+    font-family: "Helvetica";
+    bottom:0;
+    right: 0;
+    left: 0;
+    margin: 30px -10px 0 -10px;  
+}
+
+.footer {
+    background-color: #769fff;
+    color: #FFF;
+    margin: 5px 0 0 13vw;
+    padding-bottom: 40px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+nav h2{margin-top: 5px;}
+nav h2 a{text-decoration: none;}
