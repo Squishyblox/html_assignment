@@ -1,18 +1,15 @@
 
 
-.footer-container {
+footer {
     background-color: #769fff;
     font-family: "Helvetica";
-    position:fixed;
     bottom:0;
     right: 0;
     left: 0;
     margin: 30px -10px  -10px;
+
 }
 
-@media (max-height:1200px){
-	.footer-container { position: static;}
-}
 
 .footer {
     width: 80%;

@@ -1,4 +1,4 @@
-div#productContainer{margin: 140px 3% 0 3%;}
+div#productContainer{margin: 140px 3% 0 3%; height:100%;}
 
 figure{width: 250px; height: 390px; margin: 1%; background-color: white;}
 
@@ -11,7 +11,7 @@ figure img{max-width: 100%; max-height: 100%; background-color: none; display:in
 
 figure figcaption{display:block; padding: 5px 10px 10px 12px; height:120px; text-align: left; white-space: pre-wrap; overflow: hidden;}
 
-span#text{display:flex; flex-direction: row; flex-wrap:wrap; position: absolute; left: 10%; right:10%; justify-content: center;}
+span#text{display:flex; flex-direction: row; flex-wrap:wrap; left: 10%; right:10%; justify-content: center; height:100%;}
 
 /*Tags for Products Figure Box (set to class)*/
 figure.Promo{border: 3px solid yellowgreen;}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="BodyContainer.css">
     <link rel="stylesheet" href="DiceLord - Interactive Navbar.css" media="screen">
     <link rel="stylesheet" href="DiceLord - Product Block.css">
+    <link rel="stylesheet" href="Page-Footer.css">
 </head>
 <body onload="myFunction()">
     <div>
@@ -43,30 +44,47 @@
             <a href="2. DiceLord - Blog Page.html">Blog</a>
         </div>
 
-        <main style="z-index: -1;">
+        <div style="z-index: -1;">
+            <a href="javascript:void(0)" onclick="filterOpen()" style="text-decoration:none;"><div id="filtertext">
+                FILTER
+            </div></a>
+            <div id="filterpanel" class="filterbox">
+                <div id="filtertitle">Show: </div>
+                <a onclick="promoFilter()">Promo Only</a>
+                <a onclick="lowPriceFilter()">Low Price Only</a>
+                <a onclick="dropPriceFilter()">Price Drop Only</a>
+                <a onclick="twoForOneFilter()">2 For 1 Only</a>
+                <a onclick="noneFilter()">No Promo</a>
+                <a onclick="allFilter()">Show All</a>
+            </div>
+        </div>
+        
+        <div align="center" id="productContainer">
             <div>
-                <a href="javascript:void(0)" onclick="filterOpen()" style="text-decoration:none;"><div id="filtertext">
-                    FILTER
-                </div></a>
-                <div id="filterpanel" class="filterbox">
-                    <div id="filtertitle">Show: </div>
-                    <a onclick="promoFilter()">Promo Only</a>
-                    <a onclick="lowPriceFilter()">Low Price Only</a>
-                    <a onclick="dropPriceFilter()">Price Drop Only</a>
-                    <a onclick="twoForOneFilter()">2 For 1 Only</a>
-                    <a onclick="noneFilter()">No Promo</a>
-                    <a onclick="allFilter()">Show All</a>
-                </div>
+                <span id="text">
+                </span>
             </div>
-            <div align="center" id="productContainer">
-                <div>
-                    <span id="text">
-                    </span>
-                </div>
-            </div>
-        </main>
+        </div>
     </div>
 </body>
+
+<footer>
+    <div class="footer-container">
+        <nav class="footer">
+            <h2><a href="url">About &nbsp;</a></h2>
+            <h2><a href="url">Products &nbsp;</a></h2>
+            <h2><a href="url">Contact Us&nbsp;</a></h2>
+            <h2><a href="url">Blog</a></h2>
+            <div class="form-email">
+                <h2>Join our Newsletter</h2>
+                <input type="email" placeholder="Enter your email address" id="form-email">
+                <input type="submit" value="Sign Up"
+                id="form-button">
+            </div>
+        </nav>
+    </div>
+</footer>
+
 <script src="NavbarScript.js"></script>
 <!--Load in Image Script-->
 <script src="ProductBlock.js"></script>
