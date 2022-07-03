@@ -1,17 +1,16 @@
-* {box-sizing:border-box}
+body {box-sizing:border-box}
 
-/* Slideshow container */
 .slideshow-container { 
   position: relative;
-  margin: 140px 0 0 -40px;
+  margin: 140px -10px -30px -40px;
 }
 
 .mySlides {display: none;
            width: 100%;
            z-index: -1;
-           position: absolute;
         }
-img {vertical-align: middle;}
+img {vertical-align: middle;
+height: 100%;}
 
 .fade {
     animation-name: fade;

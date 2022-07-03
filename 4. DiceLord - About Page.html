@@ -7,21 +7,27 @@
     <title>DICELORDS</title>
     <link rel="stylesheet" href="DiceLordTest.css">
     <link rel="stylesheet" href="BodyContainer.css">
+    <link rel="stylesheet" href="Page-Footer.css">
     <link rel="stylesheet" href="About.css">
     <link rel="stylesheet" href="DiceLord - Interactive Navbar.css" media="screen">
 
     <style>
-        h1 {
-            font-size: 65px;
-            font-family: Helvetica;
+        .slideshow-container{position: relative;
+        text-align: left;
+        color:white;
+        font-family: helvetica;}
+
+        .subheading {
+        font-size: 1vw;
         }
 
-        p {
-            font-size: 20px;
-            font-family: Helvetica;
+        .heading{font-size: 3vw}
+
+        .headbox {
+        position: absolute;
+        top: 10vw;
+        left: 12vw;
         }
-
-
     </style>
 </head>
 <body style = "background-color: black;">
@@ -80,57 +86,41 @@
             <div class="mySlides fade">
                 <img src="Image/board2.jpg" style="width:100%">
             </div>
-
-        </div>
-
-        <div class="aboutClass">
-            <div style = "float: left;margin-top: 230px; padding-left: 160px;">
             
-            <h1 style = "color:white">
-                Hello there, we're nerds.
-            </h1>
-            
-            <p style = "color:white">
-                We know what it takes to bring the best experience out of your tabletop game sessions, and what better way to <br>
-                that than by including the perfect dice set to fit the theme of your adventure!
-            </p>
+            <div class = "headbox">
 
-            <p style="color:white">
+                <div class="heading">Hello, we're nerds.</div>
+                <br> <br>
+                <div class="subheading"> We know what it takes to bring the best experience out of your tabletop game sessions, and what better way to <br>
+                    do that than by including the perfect dice set to fit the theme of your adventure!
+                    <br> <br>
                 Equip yourself by exploring our extensive catalog of custom-made tabletop dice sets ranging from the classic D6 <br> and D20, to more 
-                elusive ones fit for your battles.
-            
-            </p>
-
-            
-            
-            
-            
+                elusive ones fit for your battles!
+                </div>
             
             </div>
 
-
-
-            
         </div>
     </div>
 
-    <footer>
-        <div class="footer-container">
-            <nav class="footer">
-                <h2><a href="url">About &nbsp;</a></h2>
-                <h2><a href="url">Products &nbsp;</a></h2>
-                <h2><a href="url">Contact Us&nbsp;</a></h2>
-                <h2><a href="url">Blog</a></h2>
-                <div class="form-email">
-                    <h2>Join our Newsletter</h2>
-                    <input type="email" placeholder="Enter your email address" id="form-email">
-                    <input type="submit" value="Sign Up"
-                    id="form-button">
-                </div>
-            </nav>
-        </div>
-    </footer>
 </body>
+
+<footer>
+    <div class="footer-container">
+        <nav class="footer">
+            <h2><a href="url">About &nbsp;</a></h2>
+            <h2><a href="url">Products &nbsp;</a></h2>
+            <h2><a href="url">Contact Us&nbsp;</a></h2>
+            <h2><a href="url">Blog</a></h2>
+            <div class="form-email">
+                <h2>Join our Newsletter</h2>
+                <input type="email" placeholder="Enter your email address" id="form-email">
+                <input type="submit" value="Sign Up"
+                id="form-button">
+            </div>
+        </nav>
+    </div>
+</footer>
 
 
 
