@@ -1,4 +1,8 @@
-
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 footer {
     background-color: #769fff;
@@ -6,22 +10,16 @@ footer {
     bottom:0;
     right: 0;
     left: 0;
-    margin: 30px -10px -10px;
-
+    margin: 30px -10px 0 -10px;  
 }
 
 .footer {
-    width: 80%;
     background-color: #769fff;
     color: #FFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: centers;
-    flex-wrap: wrap;
-    margin: 5px 0 0 15vw;
-    padding-top: 40px;
+    margin: 5px 0 0 13vw;
     padding-bottom: 40px;
-    bottom: 0px;
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
 nav h2{margin-top: 5px;}
