@@ -3,7 +3,7 @@ var openedFilter = false;
 function filterOpen(){
     if (!openedFilter){
         document.getElementById("filtertext").style.padding = "12px 55px";
-        document.getElementById("filterpanel").style.width = "150px";
+        document.getElementById("filterpanel").style.width = "160px";
         openedFilter = true;
     }
     else if(openedFilter){
