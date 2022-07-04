@@ -60,6 +60,7 @@ const block = [
         //<Image Loader>
         var image = document.createElement("img");
         image.setAttribute("src", img);
+        image.setAttribute("alt", img);
         imagebox.appendChild(image);
         box.appendChild(imagebox);
 
