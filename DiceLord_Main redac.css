@@ -1,0 +1,14 @@
+
+.toolbar{overflow:hidden;
+background-color: #761212; position:fixed; width:100%; top: 71px;}
+
+.toolbar a{font-size: 30px; color:white; text-decoration: none; text-align: center;
+    padding: 14px 20px; display:block; float:left; transition: 0.5s;}
+
+.toolbar a:hover{background-color: #ff6f6f; color:black}
+
+.content{background-color: #f6fbf4; height: 1000px; margin: 130px 10% 0 10%;}
+
+.divider{padding: 5% 1% 1% 10%;}
+
+body{background-image: url("image/noot\ noot.jpg"); background-size:100%;}

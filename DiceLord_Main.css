@@ -1,14 +1,14 @@
+body{background-color: #f0ffff; transition:0.3s;}
 
-.toolbar{overflow:hidden;
-background-color: #761212; position:fixed; width:100%; top: 71px;}
+.main{margin-left: 400px;}
 
-.toolbar a{font-size: 30px; color:white; text-decoration: none; text-align: center;
-    padding: 14px 20px; display:block; float:left; transition: 0.5s;}
+div.spacer{background-color: #9bb9ff; height:60px;  margin: 0 0 0 -8px; /*-350*/
+    position:fixed; width:100%; top:0; z-index: 2;}
 
-.toolbar a:hover{background-color: #ff6f6f; color:black}
+nav.pot{overflow: hidden; background-color: #769fff; margin-left:-8px; height:80px;
+    position:fixed; width: 100%; top: 60px; transition:top 0.5s; z-index: 1;}
 
-.content{background-color: #f6fbf4; height: 1000px; margin: 130px 10% 0 10%;}
+span.holder a{text-decoration:none; font-size:22px; text-align: center;
+padding: 22px 16px; display:block; float:right; margin:8px 12px; font-family: Helvetica, Arial, sans-serif;}
 
-.divider{padding: 5% 1% 1% 10%;}
-
-body{background-image: url("image/noot\ noot.jpg"); background-size:100%;}
+span.holder a:hover{background-color: #329D9C;}
