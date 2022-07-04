@@ -16,7 +16,7 @@ footer {
     color: #FFF;
     display: flex;
     flex-direction: column;
-    justify-content: centers;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 5px 0 0 15vw;
     padding-top: 40px;
