@@ -10,44 +10,8 @@
     <link rel="stylesheet" href="DiceLord_InteractiveNavbar.css" media="screen">
 </head>
 <body>
-    <div>
-        <div class="spacer" id="spacer" style="z-index: 1;"></div>
-        <nav class="pot" id="pot">
-            <!--Logo (Replace when have time)-->
-            <a href="index.html" style="text-decoration: none;"><img src="Image/dicelordlogo.png" style="height:85%; margin: 5px 0px 2px 12px;"></a>
-
-            <!--Nav Bar Options-->
-            <span class="holder"> 
-                <a href="4.DiceLord_AboutPage.html">About</a>
-                <a href="5.DiceLord_ProductPage.html">Products</a>
-                <a href="3.DiceLord_ContactPage.html">Contact Us</a>
-                <a href="2.DiceLord_BlogPage.html">Blog</a>
-            </span>
-            
-            <!--Menu Icon when Zoomed-->
-            <a href="javascript:void(0);" class="menu" onclick="sideNav()">
-                <div class="icon"></div>
-                <div class="icon"></div>
-                <div class="icon"></div>
-            </a>
-        </nav>
-
-        <!--Invisible Side Panel-->
-        <div id="mySidepanel" class="sidepanel">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-            <br><br>
-            <a href="4.DiceLord_AboutPage.html">About</a>
-            <a href="5.DiceLord_ProductPage.html">Products</a>
-            <a href="3.DiceLord_ContactPage.html">Contact Us</a>
-            <a href="2.DiceLord_BlogPage.html">Blog</a>
-        </div>
-
-        <!--Body Content-->
-        <div class="container">
-            
-        </div>
-    </div>
 </body>
-
-<script src="NavbarScript.js"></script>
+<script>
+    window.location.replace("4.DiceLord_AboutPage.html");
+</script>
 </html>
