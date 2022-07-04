@@ -3,10 +3,10 @@ body{background-color: #f0ffff; transition:0.3s;}
 .main{margin-left: 400px;}
 
 div.spacer{background-color: #9bb9ff; height:60px;  margin: 0 0 0 -8px; /*-350*/
-    position:fixed; width:100%; top:0;}
+    position:fixed; width:100%; top:0; z-index: 2;}
 
 nav.pot{overflow: hidden; background-color: #769fff; margin-left:-8px; height:80px;
-    position:fixed; width: 100%; top: 60px; transition:top 0.5s;}
+    position:fixed; width: 100%; top: 60px; transition:top 0.5s; z-index: 1;}
 
 span.holder a{text-decoration:none; font-size:22px; text-align: center;
 padding: 22px 16px; display:block; float:right; margin:8px 12px; font-family: Helvetica, Arial, sans-serif;}
