@@ -1,4 +1,5 @@
 .largercontainer{
+  font-family: Helvetica, sans-serif;
   min-height: 100vh;
   width: 100%;
   background: #f0ffff;
@@ -64,7 +65,7 @@
 }
 .content .right-side .topic-text{
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 550;
   color: rgb(255, 255, 255);
 }
 .right-side .input-box{
@@ -74,21 +75,22 @@
 }
 .right-side .input-box input,
 .right-side .input-box textarea{
-  height: 100%;
+  font-family: Helvetica, sans-serif;
+  height: 90%;
   width: 100%;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 12px;
   background: rgb(255, 255, 255);
   border-radius: 6px;
-  padding: 0 15px;
+  padding: 0 12px;
   resize: none;
 }
 .right-side .message-box{
   min-height: 110px;
 }
 .right-side .input-box textarea{
-  padding-top: 6px;
+  padding-top: 10px;
 }
 .right-side .text-center{
   display: inline-block;
@@ -107,6 +109,7 @@
   transition: all 0.3s ease;
 }
 .text-center input[type="submit"]:hover{
+  color: #f0ffff;
   background: rgb(0, 56, 167);
 }
 
@@ -146,7 +149,7 @@
 
   label.error{
     font-weight: 700;
-    display: block;
+    display: flex;
     color: red;
     font-size: 9px;
   }

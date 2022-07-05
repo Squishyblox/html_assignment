@@ -19,6 +19,6 @@ $("#formValidation").validate({
 
 
     submitHandler: function(form) {
-      form.button();
+      form.submit();
     }
 });
